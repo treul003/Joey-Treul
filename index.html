@@ -6,7 +6,7 @@
     <title>Joey Treul Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
+    
     <style>
       *{
         font-family: 'Montserrat', sans-serif;
@@ -36,6 +36,10 @@
         padding: 16px;
         text-align: center;
       }
+      .project-box{
+        padding: 16px;
+        text-align: left;
+      }
       .name-text{
         font-size: 20pt;
       }
@@ -61,33 +65,66 @@
       .link:hover{
         opacity: 0.7;
       }
+      
+      .dropbtn {
+        background-color: #7a0019;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        border-radius: 0px 0px 0px 40px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 12px;
+        text-decoration: none;
+        display: block;
+        font-size: 10px;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
 
+      .dropdown:hover .dropdown-content {display: block;}
+
+      .dropdown:hover .dropbtn {background-color: #7a0019;}
     </style>
   </head>
+
   <body>
     <div class="main-box">
       <div class="pic-box">
-
       </div>
       <div class="info-box">
+        <!--Headers-->
         <p class="name-text">Joey Treul</p>
         <p class="title-text">University of Minnesota</p>
         <p class="title-text">PharmD, MSHI, Class of 2022</p>
         <a target="_blank" href="https://www.linkedin.com/in/joey-treul/">
           <i class="fa fa-linkedin-square link"></i>
         </a>
-        <p class="project-text" style="text-align:left"><b>Projects</b></p>
-        <a target="_blank" href=https://docs.google.com/document/d/1n6tpVoARwWoRHdtQfXef0B0L1uodnk8_gvh6yi09NlQ/edit?usp=sharing>
-          <p class="project-name-text" style="text-align:left">“Pharmacy x Informatics” Informative Document</p>
-        </a>
-        <a target="_blank" href=https://drive.google.com/file/d/1WL4K1KoSr_-7eYkkxGzvjsCXWM8RlNjv/view>
-          <p class="project-name-text" style="text-align:left">Master of Health Informatics/Doctor of Pharmacy Dual Degree Brochure
-          </p>
-        </a>
-        <a target="_blank" href=https://drive.google.com/file/d/1We4qGzmlv7iAYsE9p1GdSUy832C2kd0B/view?usp=sharing>
-          <p class="project-name-text" style="text-align:left">COVID-19 Vaccine Information</p>
-        </a>
       </div>
+      
+        <!--Projects-->      
+      <div class="dropdown" style="float:left">
+      <button class="dropbtn">Projects</button>
+      <div class="dropdown-content">
+        <a href="https://docs.google.com/document/d/1n6tpVoARwWoRHdtQfXef0B0L1uodnk8_gvh6yi09NlQ/edit?usp=sharing">“Pharmacy x Informatics” Informative Document</a>
+        <a href="href=https://drive.google.com/file/d/1WL4K1KoSr_-7eYkkxGzvjsCXWM8RlNjv/view">Master of Health Informatics/Doctor of Pharmacy Dual Degree Brochure</a>
+        <a href="href=https://drive.google.com/file/d/1We4qGzmlv7iAYsE9p1GdSUy832C2kd0B/view?usp=sharing">COVID-19 Vaccine Information</a>
+      </div>
+    </div>
     </div>
   </body>
 </html>
