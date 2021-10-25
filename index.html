@@ -22,7 +22,7 @@
       }
       .main-box{
         background-color: white;
-        width: 90%;
+        width: 90vw;
         max-width: 400px;
         border-radius: 40px;
         box-shadow: 10px 10px 100px 0px rgba(0,0,0,0.4);
@@ -72,15 +72,6 @@
       }
       .CV:hover{opacity: 0.7;}
      
-      .dropbtnr {
-        background-color: #7a0019;
-        color: white;
-        padding: 16px;
-        padding-left: 53px;
-        font-size: 16px;
-        border: none;
-        border-radius: 0px 0px 40px 0px;
-      }
       .dropup {
         position: relative;
         display: inline-block;
@@ -98,19 +89,25 @@
       .dropup-content a {
         color: black;
         padding: 12px 12px;
+        width:100%;
         text-decoration: none;
         display: block;
         font-size: 10px;
         border-radius: 10px 10px 10px 10px;
       }
-      .dropbtnl {
+      .dropbtn {
         background-color: #7a0019;
         color: white;
-        padding: 7.5px;
+        box-sizing: border-box;
+        width:90vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width:400px;
         font-size: 14px;
         border: none;
-        border-radius: 0px 0px 0px 40px;
+        display: inline-block;
       }
+
       .dropup-content a:hover {background-color: #ddd;}
       .dropup:hover .dropup-content {display: block;}
       .dropup:hover .dropbtn {background-color: #7a0019;}
@@ -145,18 +142,21 @@
       <!--About Me-->
       <div class="just"><h2>
         <b>About Me: </b></h2>
-        Hello world! I'm Joey Treul, a future pharmacist studying at the University of Minnesota-Twin Cities in Minneapolis, MN. I have a passion towards pediatrics and health technology and believe that technology can improve and make healthcare fun for everyone--especially kids.
+        Hello world! I'm Joey Treul, a future pharmacist studying at the University of Minnesota-Twin Cities in Minneapolis, MN. I have a passion towards pediatrics and health technology. I believe technology can change healthcare, making it better and fun for everyone--especially kids.
       </div>
       <div class="square"></div>
         <!--App Project-->
-      <div class="dropup" style="float:left">
-        <button class="dropbtnl">Gamification of Pharmacogenomics<br line-height:2px;>(Coming Soon)</br></button>
+      <div class="dropup" style="text-align:center">
+        <button class="dropbtn">
+          Gamification of Pharmacogenomics<br line-height:2px;>(Coming Soon)</br>
+        </button>
       </div>
+      <div class="square"></div>
 
         <!--Projects-->      
-      <div class="dropup" style="float:right">
-      <button class="dropbtnr">Projects</button>
-      <div class="dropup-content">
+      <div class="dropup" style="float:center">
+      <button class="dropbtn">Projects</button>
+      <div class="dropup-content" >
         <a target="_blank" href="https://docs.google.com/document/d/1n6tpVoARwWoRHdtQfXef0B0L1uodnk8_gvh6yi09NlQ/edit?usp=sharing">“Pharmacy x Informatics” Informative Document</a>
         <a target="_blank" href="https://drive.google.com/file/d/1WL4K1KoSr_-7eYkkxGzvjsCXWM8RlNjv/view">Master of Health Informatics/Doctor of Pharmacy Dual Degree Brochure</a>
         <a target="_blank" href="https://drive.google.com/file/d/1xP1fEcIxuLUyS9BR_UTGadoDVAa1Vt7P/view?usp=sharing">COVID-19 Vaccine Information</a>
