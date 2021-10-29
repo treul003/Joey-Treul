@@ -14,7 +14,7 @@
         font-family: 'Montserrat', sans-serif;
       }
       body{
-      background: linear-gradient(40deg, rgba(235,235,235,1) 10%, rgba(134,156,185,1) 65%, rgba(125,250,255,1) 100%); display: flex;
+      background: linear-gradient(40deg, rgba(255,203,164,1) 10%, rgba(255,205,205,1) 45%, rgba(125,250,255,1) 100%); display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -97,8 +97,8 @@
         border-radius: 10px 10px 10px 10px;
       }
       .dropbtn {
-        background-color: #7a0019;
-        color: white;
+        background-color: #c3edef;
+        color: grey;
         box-sizing: border-box;
         width:90vw;
         padding: 12px;
@@ -106,8 +106,20 @@
         font-size: 14px;
         border: none;
         display: block;
+        border-radius: 0px 0px 40px 40px;
       }
-
+      .dropbtna {
+        background-color: #c3edef;
+        color: grey;
+        box-sizing: border-box;
+        width:90vw;
+        padding: 12px;
+        max-width:600px;
+        font-size: 14px;
+        border: none;
+        display: block;
+        border-radius: 0px 0px 0px 0px;
+      }
       .dropup-content a:hover {
         opacity: 0.7;
         width: 90vw;
@@ -115,9 +127,10 @@
         border-radius: 10px;
       }
       .dropup:hover .dropup-content {display: block;}
-      .dropup:hover .dropbtn {background-color: #B36574;}
-      
-      .square{height:10px; width:100%;background-color:#7a0019}
+      .dropup:hover .dropbtna {background-color: #c3edef; opacity: 0.7;}
+      .dropup:hover .dropbtn {background-color: #c3edef; opacity: 0.7;}
+
+      .square{height:10px; width:100%;background-color:#c3edef}
       
       div.just {
         text-align: justify;
@@ -151,14 +164,14 @@
         Hello world! I'm Joey Treul. Although from Anaheim, CA, I received my Bachelor of Science degree in Chemical Engineering at the University of Minnesota-Twin Cities, and have stayed here to pursue a PharmD. I have a great interest in pediatrics because I love the challenges and intricacies that goes into pediatric pharmacy across the broad spectrum of kids' ages.
       </div>
       <div class="just">
-        I'm seeking to pursue a PGY1 that aligns with my interests in pediatrics. My interests lies in pediatric and neonatal critical care, emergency medicine, and informatics. I love problem solving and the critical thinking skills needed for these complex and time-sensitive cases.
+        I'm seeking to pursue a PGY1 that aligns with my interests in pediatrics. My interests lie in pediatric and neonatal critical care, emergency medicine, and informatics. I love problem solving and the critical thinking skills needed for these complex and time-sensitive cases.
       </div>
       <div class="just">
-        Outside of the world of pharmacy, I love traveling, online gaming, spending time with family and friends, and playing volleyball (which is currently a work in progress).
+        Outside of the world of pharmacy, I love traveling, online gaming, spending time with family and friends, and playing volleyball (which is currently a work in progress). Fun fact: I was in attendance at Kobe Bryant's historical 81-point game against the Toronto Raptors.
       </div>
         <!--App Project-->
       <div class="dropup" style="text-align:center">
-        <button class="dropbtn">
+        <button class="dropbtna">
           Gamification of Pharmacogenomics<br line-height:2px;>(Coming Soon)</br>
         </button>
       </div>
